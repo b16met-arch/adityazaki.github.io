@@ -407,41 +407,40 @@
                     <h3 class="contact-title padd-15">Kirim saya email</h3>
                     <h4 class="contact-sub-title padd-15">Saya akan menjawab pesan anda secepat mungkin</h4>
                     <!---Contact form--->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!---Contact form--->
+<div class="row">
+  <div class="contact-form padd-15">
+    <form id="contactForm" class="row">
+      <div class="form-item col-6 padd-15">
+        <div class="form-group">
+          <input id="name" name="name" type="text" class="form-control" placeholder="Name" required>
+        </div>
+      </div>
+      <div class="form-item col-6 padd-15">
+        <div class="form-group">
+          <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
+        </div>
+      </div>
+
+      <div class="form-item col-12 padd-15">
+        <div class="form-group">
+          <input id="subject" name="subject" type="text" class="form-control" placeholder="Subject" required>
+        </div>
+      </div>
+
+      <div class="form-item col-12 padd-15">
+        <div class="form-group">
+          <textarea id="message" name="message" class="form-control" placeholder="Message" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-item col-12 padd-15">
+        <button type="submit" class="btn">Send Message</button>
+      </div>
+    </form>
+  </div>
+</div>
+
                 </div>
             </section>
             <!--- Contact Section end--->
@@ -471,6 +470,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
         <script src="script.js"></script>
         <script src="style-switcher.js"></script>
+        <script src="contact.js"></script>
     </div>
 </body>
 
